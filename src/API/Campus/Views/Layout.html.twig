@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ app.request.basePath }}/Resources/stylesheets/app.css" />
+    <script src="{{ app.request.basePath }}/Resources/bower_components/modernizr/modernizr.js"></script>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    {% include "Includes/header.html.twig" %}
+    <div class="tabs-content">
+        {% block content %}{% endblock %}
+    </div>
+    {% include "Includes/footer.html.twig" %}
+    <script src="{{ app.request.basePath }}/Resources/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="{{ app.request.basePath }}/Resources/bower_components/foundation/js/foundation.min.js"></script>
+    <script src="{{ app.request.basePath }}/Resources/js/app.js"></script>
+    {% block scriptFooter %}{% endblock %}
+</body>
+</html>

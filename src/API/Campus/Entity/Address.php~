@@ -1,0 +1,31 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Rico
+ * Date: 16/03/2015
+ * Time: 10:00
+ */
+
+namespace API\Campus\Entity;
+
+/**
+ * Class Address
+ * @package src\API\Campus\Entity
+ * @Entity(repositoryClass="API\Campus\Entity\AddressRepository")
+ */
+class Address {
+    /**
+     * @Id @Column(type="integer")
+     * @GeneratedValue
+     */
+    private $id;
+
+    /** @Column(type="text") */
+    private $rue;
+
+    /** @Column(type="integer") */
+    private $codepostale;
+
+    /** @Column(type="text") */
+    private $ville;
+}

@@ -1,0 +1,33 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Rico
+ * Date: 16/03/2015
+ * Time: 10:26
+ */
+
+namespace API\Campus\Entity;
+
+/**
+ * Class Localisation
+ * @package src\API\Campus\Entity
+ * @Entity(repositoryClass="API\Campus\Entity\LocalisationRepository")
+ */
+class Localisation {
+
+    /**
+     * @Id @Column(type="integer")
+     * @GeneratedValue
+     */
+    private $id;
+
+    /**
+     * @Column(type="float")
+     */
+    private $lat;
+
+    /**
+     * @Column(type="float")
+     */
+    private $lng;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "vendor_name/package_name",
+  "description": "API REST full Campus Supinfo",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "author's Rico",
+      "email": "aymeric42680@gmail.com"
+    }
+  ],
+  "require": {
+    "silex/silex": "1.0.*",
+    "taluu/doctrine-orm-provider": "1.0.*",
+    "twig/twig": "1.x-dev",
+    "symfony/twig-bridge": "~3.0@dev",
+    "symfony/templating": "~3.0@dev",
+    "symfony/serializer": "~3.0@dev"
+  }
+}
