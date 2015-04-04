@@ -6,6 +6,8 @@
  * Time: 22:08
  */
 
+$app->get('/', 'api.campus.defaultController:indexAction');
+
 $app->get('/api/campus/', 'api.campus.defaultController:indexAction');
 
 $app->get('/api/campus/all', 'api.campus.defaultController:getAllCampusAction');
