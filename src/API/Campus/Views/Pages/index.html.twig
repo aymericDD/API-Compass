@@ -44,7 +44,7 @@ error:&error];
 for(NSObject *object in objects) {
 
     // Localisation
-    NSObject *localisation = [st valueForKey:@"localisation"];
+    NSObject *localisation = [object valueForKey:@"localisation"];
     float lat = [[localisation valueForKey:@"lat"] floatValue];
     float lng = [[localisation valueForKey:@"lng"] floatValue];
 
